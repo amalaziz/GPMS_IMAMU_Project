@@ -1,0 +1,2 @@
+# GPMS_IMAMU_Progect
+Nowadays, at Imam Mohammad Ibn Saud Islamic University (IMSIU) in the female  Information Systems (IS) department, graduation projects (GPs) are managed by the GP  coordinator through the Learning Management System (LMS) Blackboard (Bb).  However, current used system does not provide adequate features to support GPs  management process. Therefore, this project aims to build a specialized system called  Graduation Project Management System (GPMS) to help GP coordinator and supervisors  manage and track GPs in an orderly and more efficient manner.
