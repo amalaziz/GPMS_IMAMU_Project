@@ -1,0 +1,31 @@
+<pages>
+<link>
+<title>Proposal Summery</title>
+<url>proposalSummery.php</url>
+</link>
+<link>
+<title>deliverables</title>
+<url>deliverables.php</url>
+</link>
+<link>
+<title>GP Docments</title>
+<url>uploadDoc.php</url>
+</link>
+<link>
+<title>Description</title>
+<url>desc.php</url>
+</link>
+<link>
+<title>First metting</title>
+<url>firstmeteeing.php</url>
+</link>
+<link>
+<title>Progress Report</title>
+<url>progress/index.php</url>
+</link>
+<link>
+<title>Final Submissions</title>
+<url>FileSubmit/uploadt.php</url>
+</link>
+
+</pages>
