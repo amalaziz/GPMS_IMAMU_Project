@@ -1,0 +1,416 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    margin: 0px;
+    background-color: aliceblue;
+}
+.dashboard{
+    padding: 0px 0px;
+    margin: 0 auto;
+}
+.openbtn {
+	background-color: white;
+	border: 1px solid white;
+	font-size: 26px;
+	color: black;
+	font-weight: bolder;
+  cursor: pointer;
+}
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropup content (Hidden by Default) */
+.dropup-content {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  right:0px;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropup */
+.dropup-content button {
+	width:100%;
+	font-size:17px;
+	text-align: left;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border: none;
+   font-family: "Times New Roman", Times, serif;
+}
+
+/* Change color of dropup links on hover */
+.dropup-content button:hover {
+	background-color: #99ccff;
+	color: #0000ff;
+
+}
+
+.dropup-content button .removeButton {
+	font-size:20px;
+	text-align: right;
+	position: absolute;
+	right : 8px;
+    top: 0px;	
+}
+.dropup-content button .editButton {
+	font-size:20px;
+	text-align: right;
+	position: absolute;
+	right : 8px;
+    bottom: 5px;	
+}
+
+/* Show the dropup menu on hover */
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+/* Change the background color of the dropup button when the dropup content is shown */
+.dropup:hover .openbtn {
+  background-color: #2980B9;
+}
+/* ==========================
+Navigation
+============================= 
+.dashboard .navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+.dashboard .navigation img.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+.dashboard .navigation img.user{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+.dashboard .navigation div .material-icons-outlined{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 30px;
+    color: #727272;
+}
+*/
+
+/* ==========================
+Main Dashboard
+============================= */
+/* Search 
+.dashboard .main .search form{
+    position: relative;
+}
+.dashboard .main .search{
+    margin-top: 40px;
+}
+.dashboard .main .search form input{
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 10px 10px 60px;
+    border: 1px solid #dadada;
+    background-color: rgba( 0 0 0 / 0);
+}
+.dashboard .main .search form span{
+    position: absolute;
+    left: 15px;
+    top: 10px;color: #727272;
+}
+.dashboard .main .search .notification{
+    margin-top: 20px;
+}
+.dashboard .main .search .notification span:nth-child(1){
+    margin-right: 15px;
+    position: relative;
+}
+.dashboard .main .search .notification span:nth-child(1)::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: sandybrown;
+    position: absolute;
+    border-radius: 50%;
+    top: 5px;
+}
+*/
+/* My Project */
+.dashboard .main .title{
+    margin-bottom: 30px;
+	margin-top: 40px;
+}
+
+.dashboard .main .title h1{
+    font-size: 35px;
+    line-height: 10px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 28px;
+    margin: 0;
+    display: inline-block;
+
+}
+
+	p.start {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: justify;
+    display: inline;
+}
+.dashboard .main .title label{
+    margin-right: 15px;
+    color: #727272;
+    font-size: 16px;
+	margin-left:57%;
+}
+.dashboard .main .title select{
+    border: none;
+    font-size: 16px;
+    background-color: rgba( 0 0 0 / 0);
+}
+
+/* Project List */
+.dashboard .main .project_list .project h2{
+    font-size: 20px;
+    line-height: 0;
+}
+
+.activity  {
+	display: block;
+    list-style: none;
+    position: relative;
+    margin-left: 0px;
+    padding-left: 0px;
+	list-style-type: none;
+	padding-left: 0%;
+    color: #727272;
+
+}
+
+
+table {
+	margin-top:15px;
+	margin-bottom: 10px;
+	width: 100%;
+	
+}
+
+.leftSide {
+	text-align: left;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+.rightSide {
+	text-align: left;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+th.rightSide {
+	text-align: left;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+.dashboard .main .project_list .project .meta img {
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    border: 4px solid aliceblue;
+}
+.dashboard .main .project_list .project .meta img.stack {
+   /* margin-left: -20px;*/
+}
+.dashboard .main .project_list .project .meta {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.dashboard .main .project_list .project {
+    padding: 20px 5px 20px 5px;
+    background-color: #fff;
+    box-shadow: 1px 1px 40px rgba( 0 0 0 / .01);
+    margin-bottom: 20px;
+	margin-left: 0px;
+	margin-right: 0px;
+    border-radius: 10px;
+    position: relative;
+
+}
+.dashboard .main .project_list .category {
+    width: 40px;
+    height: 40px;
+    background-color: rebeccapurple;
+    border-radius: 0px 10px 10px 10px;
+    position: absolute;
+    right: 0;
+	top: 0;
+	
+} 
+.category_color1{
+    background-color: tan !important;
+}
+.category_color2{
+    background-color: rebeccapurple !important;
+}
+.category_color3{
+    background-color: sandybrown !important;
+}
+.category_color4{
+    background-color: lightcyan !important;
+}
+
+/* ==========================
+Secondary Statics
+============================= */
+/* Chart
+.dashboard .secondary .chart .complete{
+    text-align: center;
+    margin: 40px 0px;
+}
+.dashboard .secondary .chart .complete h3{
+    line-height: 0px;
+}
+.dashboard .secondary .chart .complete p{
+    color: #727272;
+}
+.dashboard .secondary .chart{
+    background-color: #fff;
+    padding: 15px;
+    position: relative;
+    margin-bottom: 30px;
+}
+ */
+/* Recent Projects */
+.dashboard .secondary .recent_project .listing h2{
+    line-height: 0px;
+}
+.dashboard .secondary .recent_project .listing p{
+    color: #727272;
+}
+.dashboard .secondary .recent_project .listing{
+    display: flex;
+    justify-content: space-between;
+}
+.dashboard .secondary .recent_project{
+    background-color: #fff;
+    padding: 15px 15px 15px 60px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.dashboard .secondary .recent_project .category{
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    position: absolute;
+    left: 10px;
+    margin-top: 20px;
+}
+
+/* ==========================
+Media Query 768xp 
+============================= */
+@media only screen and (min-width: 768px){
+    /* Dashboard Search */
+    .dashboard .main .search{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+    .dashboard .main .search form{
+        margin-top: 10px;
+    }
+    section.main .project_list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    section.main .project_list .project{
+        width: 53%;
+    }
+    section.main .project_list .project span{
+        margin-top: 15px;
+    }
+
+    /* Recent Projects */
+    section.secondary{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        background-color: #ffffff;
+        padding-top: 70px;
+    }
+    section.secondary .chart{
+        width: 40%;
+    }
+    section.secondary .recent_project{
+        width: 55%;
+    }
+    section.secondary .recent_project .listing span{
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .dashboard .navigation,
+    .dashboard .navigation div span,
+    section.secondary{
+        display: block;
+    }
+    .dashboard .navigation{
+        width: 60px;
+        position: fixed;
+        z-index: 10;
+    }
+    section.main{
+        width: 60%;
+        margin-left: 4%;
+		margin-top: 3%;
+        margin-right: 20px;
+    }
+    section.secondary{
+        width: 27%;
+        padding-top: 0px;
+        position: fixed;
+        top: 20px;
+        right: 0px;
+        background-color: transparent;
+    }
+    section.secondary .chart,
+    section.secondary .recent_project{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .dashboard .navigation div{
+        margin-top: 19vh;
+        margin-bottom: 19vh;
+    }
+    .dashboard .navigation div span{
+        margin-top: 5vh;
+    }
+}
+
+@media only screen and (min-width: 1111px){
+    section.main .project_list .project{
+        width: 32%;
+    }
+    section.main{
+        width: 90%;
+    }
+} 
+@media only screen and (min-width: 1500px){
+    section.secondary .recent_project .listing:nth-child(4){
+        display: none;
+    }
+}
